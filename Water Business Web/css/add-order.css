@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    overflow: auto;
+    background-color: #ede8f5;
+}
+
+/* General reset */
+h1, label, input, button {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space between sections */
+    align-items: flex-start; /* Align items at the top */
+    gap: 10px; /* Space between sections */
+    padding: 20px; /* Padding around the container */
+}
+
+/* Home Section */
+.home-section {
+    flex: 1; /* Allow home section to grow and fill available space */
+    max-width: 80%; /* Adjust width as needed */
+    width: 30vw;
+    margin: 0 auto; /* Center the section horizontally */
+}
+
+.home-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Header */
+.section_header {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.section_header i {
+    font-size: 36px;
+    color: #007bff;
+}
+
+/* Form Styling */
+#productAddFormContainer {
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.appFromInputContainer {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* General input styling */
+.input,
+.password,
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+/* Select input specific styling */
+select {
+    -webkit-appearance: none; /* Removes default styles for select */
+    -moz-appearance: none;    /* Removes default styles for select */
+    appearance: none;         /* Removes default styles for select */
+}
+
+/* Floating Label Styles */
+.appFromInputContainer .floating-label {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    transition: all 0.4s;
+    color: #161a2d;
+}
+
+.appFromInputContainer input:focus ~ .floating-label,
+.appFromInputContainer input:valid ~ .floating-label,
+.appFromInputContainer select:focus ~ .floating-label {
+    font-size: 0.7em;
+    transform: translateX(-10px) translateY(-30px);
+    padding: 0 5px;
+    border-radius: 2px;
+    background: #fff;
+    color: #161a2d;
+    border: 1px solid #161a2d;
+    z-index: 1;
+}
+
+/* Eye Icon for Password Visibility */
+.eye-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 2;
+    color: #161a2d;
+    font-size: 15px;
+}
+
+.pass-err {
+    padding-left: 25%;
+    padding-top: 10px;
+}
+
+/* Button Styling */
+.appBtn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.appBtn i {
+    margin-right: 5px;
+}
+
+.appBtn:hover {
+    background-color: #0056b3;
+}
+
+.responseMessage {
+    color: #28a745;
+    padding-left: 5vw;
+    padding-top: 2vw;
+}
+
+/* Role Select Dropdown */
+.appFromInputContainer select {
+    padding-right: 30px; /* Space for custom arrow */
+}
+
+.appFromInputContainer select::-ms-expand {
+    display: none; /* Hide default dropdown arrow for IE */
+}
+
+.bx-list-ul {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 2;
+    color: #161a2d;
+    font-size: 15px; 
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .home-content {
+        padding: 20px;
+    }
+}

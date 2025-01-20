@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    overflow: auto;
+    background-color: #ede8f5;
+}
+
+/* General reset */
+h1, label, input, button {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.main-content {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.main-content > div {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+  
+.user-count {
+    background-color: #4caf50; /* Green */
+}
+
+.role-count {
+    background-color: #2196f3; /* Blue */
+}
+
+.customer-count {
+    background-color: #ff9800; /* Orange */
+}
+
+.order-count {
+    background-color: #f44336; /* Red */
+}
