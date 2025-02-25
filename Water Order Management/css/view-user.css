@@ -1,0 +1,325 @@
+body {
+    font-family: Arial, sans-serif;
+    overflow: auto;
+    background-color: #ede8f5 !important;
+}
+
+.side-section {
+    flex: 0 0 900px; /* Fixed width for side section */
+    max-width: 80%; /* Ensure it doesn't exceed container width */
+    margin-top: auto;
+    margin: 0 auto;
+    padding-top: 5vh;
+}
+
+/* Side Content */
+.side-content {
+    background-color: #f8f9fa;
+    max-height: fit-content;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section_content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+}
+
+table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.productImages {
+    max-width: 50px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+/* Action Buttons */
+.updateUser, .deleteUser {
+    display: inline-block;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.updateUser {
+    background-color: #28a745; /* Green for edit */
+}
+
+.deleteUser {
+    background-color: #dc3545; /* Red for delete */
+}
+
+.updateUser:hover, .deleteUser:hover {
+    opacity: 0.8;
+}
+
+
+/* Action Buttons */
+.updateCustomer, .deleteCustomer {
+    display: inline-block;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.updateCustomer {
+    background-color: #28a745; /* Green for edit */
+}
+
+.deleteCustomer {
+    background-color: #dc3545; /* Red for delete */
+}
+
+.updateCustomer:hover, .deleteCustomer:hover {
+    opacity: 0.8;
+}
+
+/* Action Buttons */
+.updateOrder, .deleteOrder {
+    display: inline-block;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.updateOrder {
+    background-color: #28a745; /* Green for edit */
+}
+
+.deleteOrder {
+    background-color: #dc3545; /* Red for delete */
+}
+
+.updateOrder:hover, .deleteOrder:hover {
+    opacity: 0.8;
+}
+
+/* Action Buttons */
+.updateRole, .deleteRole {
+    display: inline-block;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.updateRole {
+    background-color: #28a745; /* Green for edit */
+}
+
+.deleteRole {
+    background-color: #dc3545; /* Red for delete */
+}
+
+.updateRole:hover, .deleteRole:hover {
+    opacity: 0.8;
+}
+
+.status.active {
+    color: green;
+    font-weight: bold;
+}
+
+.status.inactive {
+    color: red;
+    font-weight: bold;
+}
+
+/* User Count Styling */
+.userCount {
+    font-weight: bold;
+    color: #333;
+    text-align: right;
+    margin-top: 10px;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space between sections */
+    gap: 10px;
+}
+
+.button a{
+    display: flex; /* Ensures the content (icon) is centered */
+    align-items: center; /* Centers the icon vertically */
+    justify-content: center; /* Centers the icon horizontally */
+    width: 30px; /* Set width of the button */
+    height: 30px; /* Set height of the button */
+    border-radius: 50%; /* Makes the button round */
+    color: #fff; /* Text/icon color (adjust as needed) */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 15px; /* Adjust icon size as needed */
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.pagination a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #161a2d;
+    padding: 5px 10px;
+    border: 1px solid #161a2d;
+    border-radius: 4px;
+}
+
+.pagination a.active {
+    background-color: #007bff;
+    color: rgb(255, 255, 255);
+}
+
+.pagination a:hover {
+    background-color: #689cf5;
+}
+
+
+/* Ensure the footer is properly aligned and styled */
+/* Modal background */
+.modal-background {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Modal header for better structure */
+.modal-header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: transparent;
+}
+
+/* Close button for modal */
+.close-modal {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f44336;
+    color: white;
+    cursor: pointer;
+}
+
+/* Close button (X) */
+.close-modal-x {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: #aaa;
+}
+
+.close-modal-x:hover {
+    color: #000;
+}
+
+/* The rest of the modal content */
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for the form */
+.form-group {
+    margin-bottom: 15px;
+}
+
+input[type="text"], input[type="email"], select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+button.save-btn , button.delete-btn{
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Popup Message Styling */
+.popup-message {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    padding: 15px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.popup-message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border-color: #c3e6cb;
+}
+
+.popup-message .popup-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popup-message .popup-close {
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #721c24;
+}
+
+.popup-message .popup-close:hover {
+    color: #f00;
+}
